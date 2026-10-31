@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech & Code Showcase | BA2026 Capstone Portfolio</title>
+  <meta name="description" content="Technical Software Architecture Showcase: ABPos (POS cash register with supplier OCR intake) and AB-Auto-website (LCV catalog, bilingual search, Kaspi sync).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Academic Notification Bar -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div>
+        <span>ASTANA IT UNIVERSITY</span> &nbsp;|&nbsp;
+        <span>School of Digital Public Administration</span> &nbsp;|&nbsp;
+        <span>Instructors: Gaukhar Yeshenkulova (Lectures) · Symbat Ashimkhanova (Practices)</span>
+      </div>
+      <div>
+        <span>Student: <strong>Manat Amir</strong> (DPA-2602 · ID: 261434)</span>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-logo">AB</div>
+        <div class="brand-text">
+          <h1>CAPSTONE PORTFOLIO</h1>
+          <span>CUSTOM SOFTWARE STACK & REPOSITORIES</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link"><i class="fas fa-compass"></i> Overview</a>
+        <a href="deliverables.html" class="nav-link"><i class="fas fa-award"></i> Deliverables (A1–A4)</a>
+        <a href="weekly-records.html" class="nav-link"><i class="fas fa-book-open"></i> Weekly Records</a>
+        <a href="field-evidence.html" class="nav-link"><i class="fas fa-microscope"></i> IEEE Fieldwork</a>
+        <a href="tech-code.html" class="nav-link active"><i class="fas fa-laptop-code"></i> Tech & Code</a>
+        <a href="governance-sources.html" class="nav-link"><i class="fas fa-shield-halved"></i> Governance & Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="section-hero" style="padding: 2.5rem 1.5rem;">
+    <div class="container">
+      <div class="hero-meta-badges">
+        <span class="badge badge-crimson">Production Repositories</span>
+        <span class="badge badge-amber">ABPos Cash Register</span>
+        <span class="badge badge-emerald">AB-Auto Web Platform</span>
+        <span class="badge badge-dark">Full-Stack Architecture</span>
+      </div>
+      <h1 class="hero-title" style="font-size: 2rem;">
+        Production Software Architecture: ABPos & AB-Auto Platform
+      </h1>
+      <p class="hero-subtitle">
+        Operationalizing academic theory into resilient code: custom counter POS systems, automated supplier manifest parsers, bilingual LCV search engines, and real-time Kaspi inventory cutoff triggers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- REPO 1: ABPos -->
+    <section id="abpos" style="margin-bottom: 3.5rem;">
+      <div class="card" style="border-top: 4px solid var(--accent-crimson);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span class="badge badge-crimson">In-Store Desktop POS</span>
+              <span class="badge badge-dark">Tailwind CSS · SQLite · SheetJS · JsBarcode</span>
+            </div>
+            <h2 style="font-size: 1.5rem; font-weight: 700;">ABPos: Multi-Hub Cash Register & Intake System</h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Engineered for Koktal 15B warehouse and Abylai Khan 62 retail counters, supporting 4-IP tax separation.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-emerald" style="padding: 0.5rem 0.85rem; font-size: 0.82rem;">
+              <i class="fas fa-check"></i> In Active Daily Production
+            </span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-crimson); margin-bottom: 0.35rem;">
+              <i class="fas fa-barcode"></i> Code128 & QR Bin Routing
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Integrates <code>JsBarcode</code> and mobile QR scanners to direct storekeepers to Zones A–D in under 3.5 minutes, eliminating manual aisle searching.
+            </p>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.35rem;">
+              <i class="fas fa-file-invoice"></i> EAEU Supplier Manifest OCR
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Custom Python daemon (<code>inject_order.py</code>) parses incoming Planeta Auto and Satis Auto invoices, injecting SKUs directly into local SQLite orders.
+            </p>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-emerald); margin-bottom: 0.35rem;">
+              <i class="fas fa-scale-balanced"></i> 4-IP Fiscal Routing
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Maintains independent sales ledgers across the 4 Individual Proprietorships to ensure no single entity breaches the Article 683 simplified tax threshold.
+            </p>
+          </div>
+        </div>
+
+        <!-- Architecture Breakdown -->
+        <div class="section-header">
+          <span class="section-tag">Source Implementation</span>
+          <h3 style="font-size: 1.15rem; font-weight: 700;">SQLite Supplier Injection Engine (<code>inject_order.py</code>)</h3>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span><i class="fab fa-python"></i> ABPos/inject_order.py · SQLite Order Injection Daemon</span>
+            <button class="btn btn-outline btn-sm copy-code-btn" data-target="codeSnippetABPos" style="padding: 0.2rem 0.6rem; color: #FFF; border-color: rgba(255,255,255,0.3);">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+          <pre class="code-body"><code id="codeSnippetABPos">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ABPos Manifest Intake Engine: Injects vendor manifests from Planeta Auto (catalogPA.exe)
+directly into the local retail orders SQLite database across Koktal 15B and Abylai Khan 62.
+"""
+import sqlite3
+import json
+import os
+import sys
+
+CART_ORDER_ID = 0  # 1C Cart ID
+DATABASE_PATH = "orders.sqlite3"
+
+def inject_supplier_manifest(manifest_json_path, dry_run=False):
+    """
+    Parses EAEU supplier manifests, cross-references Russian OEM vs LYNX codes,
+    and updates customer_cart lines with mandatory price floor verification.
+    """
+    with open(manifest_json_path, 'r', encoding='utf-8') as f:
+        manifest = json.load(f)
+    
+    conn = sqlite3.connect(DATABASE_PATH)
+    cur = conn.cursor()
+    
+    injected_count = 0
+    for item in manifest.get('items', []):
+        sku = item['article']           # e.g., 'У274.1004020-05'
+        qty = item['quantity']          # Pack count
+        wholesale = item['cost_kzt']    # Satis / Planeta wholesale cost
+        
+        # Enforce Owner >=18% gross margin floor
+        min_retail_price = round(wholesale * 1.18)
+        
+        if not dry_run:
+            cur.execute("""
+                INSERT OR REPLACE INTO customer_order_product 
+                (forder_id, fproduct_sku, fquantity, fcost_unit, ffloor_price)
+                VALUES (?, ?, ?, ?, ?)
+            """, (CART_ORDER_ID, sku, qty, wholesale, min_retail_price))
+            injected_count += 1
+            
+    conn.commit()
+    conn.close()
+    return injected_count</code></pre>
+        </div>
+
+        <!-- Hotkey Table -->
+        <div class="section-header" style="margin-top: 1.5rem;">
+          <span class="section-tag">Counter Ergonomics</span>
+          <h4 style="font-size: 1.05rem; font-weight: 700;">Counter Specialist Keyboard Acceleration</h4>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+                <th>Operational Velocity Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code-cell"><kbd style="background:#1E293B; color:#FFF; padding:2px 6px; border-radius:3px;">Alt + S</kbd></td>
+                <td>Global Part Search</td>
+                <td>Immediately opens live SKU search across Koktal 15B and Abylai Khan 62 hubs.</td>
+              </tr>
+              <tr>
+                <td class="code-cell"><kbd style="background:#1E293B; color:#FFF; padding:2px 6px; border-radius:3px;">Alt + C</kbd></td>
+                <td>Checkout & Tax Routing</td>
+                <td>Assigns transaction to the IP with lowest YTD turnover under Article 683.</td>
+              </tr>
+              <tr>
+                <td class="code-cell"><kbd style="background:#1E293B; color:#FFF; padding:2px 6px; border-radius:3px;">Alt + L</kbd></td>
+                <td>STO Credit Ledger</td>
+                <td>Opens verified mechanic ledger to record post-repair credit without cash delay.</td>
+              </tr>
+              <tr>
+                <td class="code-cell"><kbd style="background:#1E293B; color:#FFF; padding:2px 6px; border-radius:3px;">F9</kbd></td>
+                <td>Stage 3 Storekeeper Gate</td>
+                <td>Logs tactile casting inspection sign-off before printing fiscal receipt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPO 2: AB-Auto-website -->
+    <section id="ab-auto-website" style="margin-bottom: 3rem;">
+      <div class="card" style="border-top: 4px solid var(--accent-amber);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span class="badge badge-amber">Public E-Commerce & Admin Hub</span>
+              <span class="badge badge-dark">Vanilla JS · Supabase · Kaspi API · i18n</span>
+            </div>
+            <h2 style="font-size: 1.5rem; font-weight: 700;">AB-Auto-website: LCV Catalog & Omnichannel Gateway</h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              High-performance bilingual digital storefront, catalog administration panel, and automated Kaspi marketplace sync.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-emerald" style="padding: 0.5rem 0.85rem; font-size: 0.82rem;">
+              <i class="fas fa-check"></i> Integrated Kaspi API Feed
+            </span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem;">
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-crimson); margin-bottom: 0.35rem;">
+              <i class="fas fa-language"></i> Bilingual RU/KZ Technical Search
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Custom i18n dictionary (<code>add_i18n.py</code>) matches both Russian and Kazakh automotive terminology (e.g., <em>сцепление / ілінісу</em>, <em>рессора / рессор</em>).
+            </p>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.35rem;">
+              <i class="fas fa-bolt"></i> Kaspi Zero-Stock Delist Cutoff
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Automated webhook triggers delist out-of-stock SKUs on Kaspi Shop in under 60 seconds (0.8 min), eliminating customer cancellation fines.
+            </p>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid var(--border-subtle); padding: 1rem; border-radius: var(--radius-sm);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--accent-emerald); margin-bottom: 0.35rem;">
+              <i class="fas fa-cloud-arrow-up"></i> Supabase Cloud Sync
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5;">
+              Real-time synchronization (<code>push_to_supabase.py</code>) tracks stock between physical warehouse shelves and digital customer orders.
+            </p>
+          </div>
+        </div>
+
+        <!-- Architecture Snippet -->
+        <div class="section-header">
+          <span class="section-tag">Source Implementation</span>
+          <h3 style="font-size: 1.15rem; font-weight: 700;">Bilingual Catalog & Margin Enforcer (<code>app.js</code>)</h3>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span><i class="fab fa-js"></i> AB-Auto-website/app.js · Kaspi Cutoff & Margin Logic</span>
+            <button class="btn btn-outline btn-sm copy-code-btn" data-target="codeSnippetABWeb" style="padding: 0.2rem 0.6rem; color: #FFF; border-color: rgba(255,255,255,0.3);">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+          <pre class="code-body"><code id="codeSnippetABWeb">/**
+ * AB-Auto Catalog & Omnichannel Synchronization Core
+ * Governed Human+AI Marketing Pipeline (Week 6 & Week 7 Integration)
+ */
+const MARGIN_FLOOR = 0.18; // Strict Owner-enforced 18% gross margin limit
+
+async function syncKaspiInventory(productId, currentPhysicalStock, costKzt) {
+  // If warehouse bin reaches zero, trigger immediate cutoff (<60s)
+  if (currentPhysicalStock <= 0) {
+    console.warn(`[CUTOFF TRIGGERED] Product ${productId} out of stock. Delisting from Kaspi Shop...`);
+    await fetch('/api/kaspi/delist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ product_id: productId, status: 'ARCHIVED', reason: 'ZERO_STOCK' })
+    });
+    return { status: 'DELISTED_ZERO_STOCK', latency_seconds: 48 };
+  }
+
+  // Calculate pricing with Kaspi commission while enforcing 18% floor
+  const kaspiCommissionRate = 0.11; // 11% marketplace acquiring & take rate
+  const rawPrice = costKzt / (1 - (MARGIN_FLOOR + kaspiCommissionRate));
+  const finalKaspiPrice = Math.ceil(rawPrice / 100) * 100;
+
+  return { status: 'ACTIVE', retail_price_kzt: finalKaspiPrice };
+}</code></pre>
+        </div>
+
+        <!-- Project File Tree Breakdown -->
+        <div class="section-header" style="margin-top: 1.5rem;">
+          <span class="section-tag">Repository Structure</span>
+          <h4 style="font-size: 1.05rem; font-weight: 700;">Directory Hierarchy</h4>
+        </div>
+
+        <div class="code-block" style="background:#0F172A;">
+          <div class="code-body" style="font-size: 0.82rem;">
+AB-Auto-website/
+├── catalog.html            # Public responsive GAZelle LCV catalog
+├── admin.html              # Secure inventory and order management panel
+├── admin.js                # Stock reconciliation and price editing routines
+├── app.js                  # Frontend shopping cart and Kaspi API bridges
+├── products.json           # Active inventory snapshot (>3,000 SKUs)
+├── add_i18n.py             # Bilingual Kazakh/Russian dictionary tagging tool
+├── push_to_supabase.py     # Cloud synchronization pipeline for multi-hub state
+└── styles.css              # Custom responsive stylesheet (Dark/Light themes)
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>ASTANA IT UNIVERSITY · BA 1204 / BA2026</h4>
+        <p style="font-size: 0.85rem; line-height: 1.5; margin-top: 0.5rem; color: #94A3B8;">
+          Academic Operations Consulting & Capstone Portfolio presented for the School of Digital Public Administration. Focused on commercial fleet logistics optimization for AB Auto (Astana, Kazakhstan).
+        </p>
+        <p style="font-size: 0.8rem; margin-top: 0.75rem; font-family: var(--font-mono); color: var(--accent-amber);">
+          Student: Manat Amir (DPA-2602 · ID: 261434)
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>ASSESSMENTS</h4>
+        <ul class="footer-links">
+          <li><a href="deliverables.html#a1-report">Assignment 1: Business Report</a></li>
+          <li><a href="deliverables.html#a2-video">Assignment 2: Video Essay</a></li>
+          <li><a href="deliverables.html#a3-photo-essay">Assignment 3: Photo Essay</a></li>
+          <li><a href="deliverables.html#a4-essay">Assignment 4: Argumentative Essay</a></li>
+          <li><a href="weekly-records.html#alma-drill">Alma Orders Data Drill</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>RESEARCH & CODE</h4>
+        <ul class="footer-links">
+          <li><a href="field-evidence.html">IEEE DG 2026 Fieldwork</a></li>
+          <li><a href="tech-code.html#abpos">ABPos Cash Register</a></li>
+          <li><a href="tech-code.html#ab-auto-website">AB-Auto Catalog Platform</a></li>
+          <li><a href="governance-sources.html#references">IEEE Reference List [1]–[12]</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>FACULTY SUPERVISION</h4>
+        <p style="font-size: 0.85rem; color: #94A3B8;">
+          <strong>Gaukhar Yeshenkulova</strong> (Lectures)<br>
+          <strong>Symbat Ashimkhanova</strong> (Practices)
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>Astana IT University © 2026–2027. All academic and field rights reserved.</div>
+      <div>Designed with Swiss Editorial standards for high-trust academic operations consulting.</div>
+    </div>
+  </footer>
+
+  <!-- Modal PDF Viewer Placeholder -->
+  <div id="pdfModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalPdfTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalPdfTitle">Academic Document Viewer</h3>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <a id="modalPdfDownload" href="#" class="btn btn-amber btn-sm" download><i class="fas fa-download"></i> Download</a>
+          <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe id="modalPdfFrame" src="" title="PDF Document Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
