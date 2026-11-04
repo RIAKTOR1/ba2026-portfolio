@@ -109,12 +109,24 @@ function initPdfModal() {
   document.querySelectorAll('[data-open-pdf]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const pdfUrl = btn.getAttribute('data-open-pdf');
+      const rawPdfUrl = btn.getAttribute('data-open-pdf');
       const title = btn.getAttribute('data-pdf-title') || 'Document Viewer';
 
+      // Преобразуем относительный путь к файлу в абсолютный URL
+      const absoluteUrl = new URL(rawPdfUrl, window.location.href).href;
+
       if (modalTitle) modalTitle.textContent = title;
-      if (modalIframe) modalIframe.src = pdfUrl;
-      if (modalDownload) modalDownload.href = pdfUrl;
+      if (modalDownload) modalDownload.href = absoluteUrl;
+
+      if (modalIframe) {
+        // Если сайт загружен через HTTP/HTTPS (на GitHub Pages или внутри iframe Google Sites),
+        // используем Google Docs Viewer для обхода политики блокировки встроенных PDF в Chrome
+        if (window.location.protocol.startsWith('http')) {
+          modalIframe.src = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
+        } else {
+          modalIframe.src = rawPdfUrl;
+        }
+      }
 
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
