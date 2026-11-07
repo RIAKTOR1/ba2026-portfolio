@@ -73,7 +73,10 @@
 
     <!-- Milestone Navigation Tabs -->
     <div class="tab-nav">
-      <button class="tab-btn active" data-tab-target="a4-essay">
+      <button class="tab-btn active" data-tab-target="capstone-final" style="background: linear-gradient(135deg, #003366 0%, #1A365D 100%); color: #FFF; font-weight: 700; border-bottom: 3px solid #C2410C;">
+        <i class="fas fa-graduation-cap" style="color: #F59E0B;"></i> Capstone Final Package (40%)
+      </button>
+      <button class="tab-btn" data-tab-target="a4-essay">
         <i class="fas fa-scale-balanced"></i> Assignment 4: Argumentative Essay
       </button>
       <button class="tab-btn" data-tab-target="a3-photo-essay">
@@ -88,9 +91,155 @@
     </div>
 
     <!-- ====================================================================
+         TAB: CAPSTONE FINAL EXAM DEFENSE PACKAGE (40%)
+         ==================================================================== -->
+    <div id="capstone-final" class="tab-content active">
+
+      <!-- Official Defense Announcement Card -->
+      <div class="card" style="margin-bottom: 2rem; border-top: 4px solid #C2410C; background: #FFFFFF; box-shadow: 0 4px 20px rgba(0, 51, 102, 0.08);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+              <span class="badge" style="background: #003366; color: #FFFFFF; font-weight: 700;"><i class="fas fa-graduation-cap"></i> Final Exam (40% of Grade)</span>
+              <span class="badge badge-amber"><i class="fas fa-shield-halved"></i> AI-Use Level 3 Disclosed</span>
+              <span class="badge badge-emerald"><i class="fas fa-check-double"></i> 16-Slide Deck &amp; 7-Page IEEE Report</span>
+            </div>
+            <h2 style="font-size: 1.65rem; font-weight: 800; color: #003366; margin-top: 0.25rem;">
+              Capstone Final Exam Package: AB Auto Architectural &amp; Operational Defense
+            </h2>
+            <p style="font-size: 0.95rem; color: #4A5568; line-height: 1.5; margin-top: 0.25rem;">
+              Comprehensive consulting dossier, board-level slide deck, AITU AI declaration register, and IEEE evidence dossier for <strong>AB Auto</strong> (Astana) vs. <strong>Interkom-Auto</strong>.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_Deck.pptx" class="btn btn-amber btn-sm" download>
+              <i class="fas fa-file-powerpoint"></i> PPTX Deck
+            </a>
+            <button class="btn btn-crimson btn-sm" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_Deck.pdf" data-pdf-title="Capstone Defense Deck (16 Slides PDF)">
+              <i class="fas fa-eye"></i> View Deck PDF
+            </button>
+            <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_Report.docx" class="btn btn-outline btn-sm" download>
+              <i class="fas fa-file-word"></i> DOCX Report
+            </a>
+            <button class="btn btn-dark btn-sm" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_Report.pdf" data-pdf-title="Capstone Executive Consulting Report (7 Pages PDF)">
+              <i class="fas fa-file-pdf"></i> View Report PDF
+            </button>
+          </div>
+        </div>
+
+        <div style="background: #F0F4F8; border-left: 4px solid #003366; padding: 1.1rem 1.35rem; border-radius: 4px; font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.5rem; color: #1E293B;">
+          <strong>Executive Core Recommendation:</strong> In an economy where centralized corporate distributors such as Interkom-Auto leverage multi-billion-tenge enterprise resource planning (ERP) backbones and automated credit algorithms, specialized SME distributors like AB Auto must not pursue uncritical full-scale automation. Instead, AB Auto must execute a pragmatic, low-capital collaborative operational architecture—pairing mobile QR bin-routing and automated multi-IP turnover thresholds with human-in-the-loop tactile metal inspection and informal relational credit scoring—to compress order fulfillment from 65.0 to under 15 minutes, safeguard a strict 18.0% gross margin floor, and defend localized market leadership across Astana and Northern Kazakhstan.
+        </div>
+
+        <!-- 4 Deliverable Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.25rem;">
+          
+          <!-- Card 1: Slide Deck -->
+          <div style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 1.25rem; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span class="badge" style="background: #EA580C; color: #FFF; font-weight: 700;">16 Slides (16:9)</span>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #64748B;">Final Exam Defense</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #003366; margin-bottom: 0.5rem;">
+                <i class="fas fa-presentation-screen text-amber"></i> Capstone Slide Deck
+              </h3>
+              <p style="font-size: 0.85rem; color: #64748B; line-height: 1.45; margin-bottom: 1rem;">
+                High-contrast widescreen presentation engineered for academic defense: executive layouts, TOC bottleneck diagnostic (65.0m &rarr; 11.5m), 4-IP tax modeling, and 3-phase implementation roadmap.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto;">
+              <button class="btn btn-crimson btn-sm" style="flex: 1;" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_Deck.pdf" data-pdf-title="Capstone Slide Deck (16:9 PDF)">
+                <i class="fas fa-eye"></i> View PDF
+              </button>
+              <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_Deck.pptx" class="btn btn-outline btn-sm" download>
+                <i class="fas fa-download"></i> PPTX
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Executive Report -->
+          <div style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 1.25rem; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span class="badge" style="background: #003366; color: #FFF; font-weight: 700;">Strictly 7 Pages</span>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #64748B;">IEEE Editorial Style</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #003366; margin-bottom: 0.5rem;">
+                <i class="fas fa-file-alt text-crimson"></i> Executive Consulting Report
+              </h3>
+              <p style="font-size: 0.85rem; color: #64748B; line-height: 1.45; margin-bottom: 1rem;">
+                Rigorous 7-page consulting report covering &sect;1&ndash;&sect;9: 1-page Executive Summary, TOC analysis, financial ratios, collaborative intelligence, 7-parameter implementation roadmap, and 13 IEEE citations.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto;">
+              <button class="btn btn-crimson btn-sm" style="flex: 1;" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_Report.pdf" data-pdf-title="Capstone Executive Report (7 Pages PDF)">
+                <i class="fas fa-eye"></i> View PDF
+              </button>
+              <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_Report.docx" class="btn btn-outline btn-sm" download>
+                <i class="fas fa-download"></i> DOCX
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: AI-Use Declaration -->
+          <div style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 1.25rem; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span class="badge badge-amber">Level 3 Supported</span>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #64748B;">Official AITU Template</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #003366; margin-bottom: 0.5rem;">
+                <i class="fas fa-robot text-dark"></i> AI-Use Declaration Register
+              </h3>
+              <p style="font-size: 0.85rem; color: #64748B; line-height: 1.45; margin-bottom: 1rem;">
+                Formal disclosure of GPT-4o and Gemini 1.5 Pro assistance across 5 operational activities. Documents prompt engineering logs, evidence checks, and human correction of the Acid-Test 0.44x hallucination.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto;">
+              <button class="btn btn-crimson btn-sm" style="flex: 1;" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_AI_Declaration.pdf" data-pdf-title="Capstone AI-Use Declaration (Level 3 PDF)">
+                <i class="fas fa-eye"></i> View PDF
+              </button>
+              <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_AI_Declaration.docx" class="btn btn-outline btn-sm" download>
+                <i class="fas fa-download"></i> DOCX
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Evidence Dossier -->
+          <div style="border: 1px solid #E2E8F0; border-radius: 8px; padding: 1.25rem; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span class="badge badge-emerald">13 IEEE Citations</span>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #64748B;">Empirical Audit Trail</span>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #003366; margin-bottom: 0.5rem;">
+                <i class="fas fa-microscope text-emerald"></i> Empirical Evidence Dossier
+              </h3>
+              <p style="font-size: 0.85rem; color: #64748B; line-height: 1.45; margin-bottom: 1rem;">
+                Comprehensive methodological provenance dossier detailing primary dispatch logbook measurements (n=45 orders), 20-SKU inventory trial logs, statutory tax code citations, and academic peer-reviewed sources.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto;">
+              <button class="btn btn-crimson btn-sm" style="flex: 1;" data-open-pdf="assets/docs/MANAT_DPA2602_BA2026_Capstone_Evidence.pdf" data-pdf-title="Capstone Empirical Evidence Dossier (IEEE PDF)">
+                <i class="fas fa-eye"></i> View PDF
+              </button>
+              <a href="assets/docs/MANAT_DPA2602_BA2026_Capstone_Evidence.docx" class="btn btn-outline btn-sm" download>
+                <i class="fas fa-download"></i> DOCX
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ====================================================================
          TAB 0: ASSIGNMENT 4 (ARGUMENTATIVE ESSAY)
          ==================================================================== -->
-    <div id="a4-essay" class="tab-content active">
+    <div id="a4-essay" class="tab-content">
 
       <div class="card" style="margin-bottom: 2rem; border-top: 4px solid var(--accent-crimson);">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
